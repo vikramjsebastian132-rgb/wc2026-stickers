@@ -1,0 +1,36 @@
+.trades-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+.trades-title { font-size: 24px; font-weight: 800; }
+.trades-sub { font-size: 14px; color: var(--muted); margin-top: 2px; }
+.trades-empty { text-align: center; padding: 40px 24px; margin-top: 20px; }
+
+.trade-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; margin-bottom: 10px; overflow: hidden;
+  transition: border-color .15s;
+}
+.trade-card.hot { border-color: rgba(245,200,66,.35); background: rgba(245,200,66,.04); }
+.tc-header { display: flex; align-items: center; gap: 14px; padding: 14px 16px; cursor: pointer; }
+.tc-avatars { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.tc-av { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: white; }
+.tc-arr { font-size: 18px; color: var(--muted); }
+.tc-info { flex: 1; min-width: 0; }
+.tc-name { font-size: 15px; font-weight: 800; }
+.tc-summary { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.tc-badges { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.tc-chevron { font-size: 11px; color: var(--muted); margin-left: 4px; }
+
+.tc-body { border-top: 1px solid var(--border); padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.tc-section { }
+.tc-sec-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 8px; }
+.tc-stickers { display: flex; flex-direction: column; gap: 4px; max-height: 260px; overflow-y: auto; }
+.tc-stk {
+  display: flex; align-items: center; gap: 8px; padding: 7px 10px;
+  border-radius: 8px; font-size: 13px;
+}
+.tc-stk.give { background: rgba(0,200,120,.08); border: 1px solid rgba(0,200,120,.2); }
+.tc-stk.get { background: rgba(245,200,66,.08); border: 1px solid rgba(245,200,66,.25); }
+.tc-stk.foil::after { content:'✦'; color:var(--gold); margin-left:auto; font-size:12px; }
+.tc-snum { font-weight: 800; font-size: 12px; color: var(--muted); min-width: 36px; }
+.tc-sname { font-weight: 600; flex: 1; }
+.tc-steam { font-size: 12px; color: var(--muted); }
+.copy-trade-btn { width: 100%; margin-top: 4px; }
